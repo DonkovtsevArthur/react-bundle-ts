@@ -3,6 +3,10 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
+var devFlagPlugin = new webpack.DefinePlugin({
+  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || "false"))
+});
+
 module.exports = {
   entry: ["react-hot-loader/patch", "./src/index.js"],
   module: {
@@ -63,6 +67,7 @@ module.exports = {
       template: "src/index.html",
       title: "React"
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    devFlagPlugin
   ]
 };
