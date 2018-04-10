@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .app {
-    text-align: center;
+    text-align: left;
     & a {
         color: red;
         font-family: 'Roboto', sans-serif;
