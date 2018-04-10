@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 
-import "../styles/app.css";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
+
+
+import "../styles/app.css";
 import img from '../images/1.jpg';
 
 
