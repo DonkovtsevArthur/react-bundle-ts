@@ -1,17 +1,14 @@
-import * as type from "../constants/ActionTypes";
+import { combineReducers } from "redux";
+import { routerReducer } from 'react-router-redux';
 
-const initialState = ["Go", "Well"];
 
-function addFreind(state = initialState, action) {
-  switch (action.type) {
-    case type.ADD_NEW:
-      return [...state, action.payload];
-      break;
+import addFriend from './addFriend';
+import addNewPeople from "./addNewPeople";
+import filter from "./filter";
 
-    default:
-      return state;
-      break;
-  }
-}
-
-export default addFreind;
+export default combineReducers({
+    routing: routerReducer,
+    addFriend,
+    addNewPeople,
+    filter
+});
