@@ -8,6 +8,10 @@ const initialState = [
   {
     id: 2,
     name: "Nasty"
+  },
+  {
+    id: 1234,
+    name: "Alfred"
   }
 ];
 

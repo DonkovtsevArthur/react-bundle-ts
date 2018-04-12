@@ -9,6 +9,9 @@
     & img {
         width: 10%;
     }
+    & .active {
+        color: blue;
+    }
 }
 
 ::placeholder {

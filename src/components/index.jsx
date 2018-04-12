@@ -5,23 +5,25 @@ import { Provider } from "react-redux";
 
 import Menu from "./Menu";
 import FriendListApp from "../containers/FriendListApp";
+import FriendsName from "../components/FriendsName";
 
 import "../styles/app.css";
 
+
+
 const App = ({ store }) => {
   const styleLink = { listStyleType: "none" };
-  return (
-    <Provider store={store}>
+  return <Provider store={store}>
       <Router>
         <div className="app">
           <Menu styleLink={styleLink} />
           <hr />
-
-          <Route path="/friendlistapp" component={FriendListApp} />
+          <Route path="/friend" component={FriendListApp} />
+        
+          <Route path="/about-friend/:id" component={FriendsName} />
         </div>
       </Router>
-    </Provider>
-  );
+    </Provider>;
 };
 
 export default App;

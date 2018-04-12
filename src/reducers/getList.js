@@ -19,9 +19,8 @@ const initialState = [
 
 
 const getList = () => {
-  return dispatch => {
+  return dispatch => { 
     setTimeout(() => {
-      console.log("i async");
       dispatch({ type: "GET_LIST", payload: initialState });
     }, 2000);
   };
