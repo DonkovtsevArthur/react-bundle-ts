@@ -8,13 +8,13 @@ module.exports = merge(common, {
   devServer: {
     contentBase: "./dist",
     compress: true,
-    historyApiFallback : true ,
+    historyApiFallback: true,
     hot: true,
     port: 9000
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
-    filename: "bundle.js"
+    filename: "[name].[hash].js"
   }
 });
