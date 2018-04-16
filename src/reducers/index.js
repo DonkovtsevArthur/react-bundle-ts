@@ -2,13 +2,11 @@ import { combineReducers } from "redux";
 import { routerReducer } from 'react-router-redux';
 
 
-import addFriend from './addFriend';
-import addNewPeople from "./addNewPeople";
-import filter from "./filter";
+
+import addOpen from "./addOpen";
+
 
 export default combineReducers({
     routing: routerReducer,
-    addFriend,
-    addNewPeople,
-    filter
+    addOpen
 });
