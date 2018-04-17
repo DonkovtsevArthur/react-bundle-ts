@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+body {
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
 .app {
     text-align: left;
     & a {
