@@ -4,7 +4,7 @@ import {render} from "react-dom";
 import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-
+//components
 import App from "./components/";
 import reducer from "./reducers/";
 
